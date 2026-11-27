@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dum Ka Chicken | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html" class="active">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Dum Ka Chicken</h1>
+    <p class="page-subtitle">Non-Veg &middot; Chicken slow-cooked in a sealed pot until tender</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/dum-ka-chicken.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/dum-ka-chicken.jpg</strong>)</span>
+          <img src="images/dum-ka-chicken.jpg" alt="Dum Ka Chicken" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 20 min + marinate 1 hr</div>
+          <div>🔥 Cook: 50 min</div>
+          <div>🍽 Serves: 4</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="dum-ka-chicken">
+            <li><label><input type="checkbox"><span>750 g chicken pieces, with bone</span></label></li>
+            <li><label><input type="checkbox"><span>For the marinade: 1 cup thick yogurt</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp ginger-garlic paste</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp Kashmiri red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp turmeric powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 1/2 tsp coriander powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp garam masala</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp lemon juice</span></label></li>
+            <li><label><input type="checkbox"><span>2 large onions, thinly sliced</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp ghee</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp oil</span></label></li>
+            <li><label><input type="checkbox"><span>Whole spices: 4 cloves, 4 cardamom pods, 1 small cinnamon stick, 1 bay leaf</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp cumin seeds</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp cashew paste</span></label></li>
+            <li><label><input type="checkbox"><span>2 green chillies, slit</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup chopped coriander leaves</span></label></li>
+            <li><label><input type="checkbox"><span>A little dough (flour and water), to seal the pot</span></label></li>
+            <li><label><input type="checkbox"><span>Salt, to taste</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Mix the chicken with all the marinade ingredients (yogurt, ginger-garlic paste, chilli powder, turmeric, coriander powder, garam masala, lemon juice and salt). Cover and rest for at least 1 hour.</li>
+            <li>Heat the oil in a heavy-bottomed pot. Fry the sliced onions until deep golden brown. Take out half and set aside for garnish.</li>
+            <li>Add the ghee, whole spices and cumin seeds to the pot with the remaining onions. Let them sizzle for 30 seconds.</li>
+            <li>Add the marinated chicken and green chillies. Cook on medium heat for 10 to 12 minutes, stirring now and then, until the chicken changes colour.</li>
+            <li>Stir in the cashew paste and half of the coriander leaves.</li>
+            <li>Cover the pot with a tight lid and seal the edges with the dough so no steam escapes.</li>
+            <li>Cook on the lowest heat (dum) for 30 to 35 minutes. Switch off the heat and rest for 10 minutes before opening.</li>
+            <li>Open the lid, garnish with the fried onions and remaining coriander, and serve hot with rotis or rice.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="nonveg.html">&larr; All Non-Veg recipes</a>
+      <a href="tandoori-chicken.html">Also try: Tandoori Chicken &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

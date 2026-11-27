@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html" class="active">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <header class="hero">
+    <img class="hero-logo" src="images/logo.png" alt="ReCo - Cook, Enjoy">
+    <p>Your favourite recipes, with an ingredient checklist to follow along while you cook.</p>
+    <p class="greeting" id="greeting"></p>
+    <p class="clock" id="clock"></p>
+    <div class="honey-divider"></div>
+  </header>
+
+  <main class="container">
+
+    <!-- Search -->
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search recipes, e.g. chicken, sweet, cold, paneer..." aria-label="Search recipes">
+      <p class="search-hint">Search by name, category, ingredient or type of dish.</p>
+      <p class="no-results" id="noResults">No recipes found. Try another word.</p>
+    </div>
+
+    <h2 class="section-heading">Recommended recipes</h2>
+
+    <div class="card-grid" id="recipeGrid">
+
+      <a class="recipe-card" href="paneer-butter-masala.html"
+         data-search="paneer butter masala veg vegetarian curry creamy tomato cashew naan roti north indian main dish dinner lunch">
+        <div class="card-photo">
+          <img src="images/paneer-butter-masala.jpg" alt="Paneer Butter Masala" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag veg">Veg</span>
+          <h3>Paneer Butter Masala</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="kadhi-pakora.html"
+         data-search="kadhi pakora veg vegetarian yogurt curd besan gram flour fritters curry tangy punjabi rice lunch dinner">
+        <div class="card-photo">
+          <img src="images/kadhi-pakora.jpg" alt="Kadhi Pakora" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag veg">Veg</span>
+          <h3>Kadhi Pakora</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="veg-pakora.html"
+         data-search="veg pakora vegetable fritters bhajiya crispy fried snack besan gram flour spinach onion potato monsoon tea time starter">
+        <div class="card-photo">
+          <img src="images/veg-pakora.jpg" alt="Veg Pakora" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag veg">Veg</span>
+          <h3>Veg Pakora</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="veg-biryani.html"
+         data-search="veg biryani vegetable rice pulao basmati mint saffron spicy raita carrot peas lunch dinner main dish">
+        <div class="card-photo">
+          <img src="images/veg-biryani.jpg" alt="Veg Biryani" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag veg">Veg</span>
+          <h3>Veg Biryani</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="chicken-biryani.html"
+         data-search="chicken biryani non-veg nonveg meat rice spicy basmati saffron raita main dish dinner lunch">
+        <div class="card-photo">
+          <img src="images/chicken-biryani.jpg" alt="Chicken Biryani" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Chicken Biryani</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="dum-ka-chicken.html"
+         data-search="dum ka chicken non-veg nonveg meat curry slow cooked yogurt spicy mughlai hyderabadi dinner lunch">
+        <div class="card-photo">
+          <img src="images/dum-ka-chicken.jpg" alt="Dum Ka Chicken" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Dum Ka Chicken</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="tandoori-chicken.html"
+         data-search="tandoori chicken non-veg nonveg meat grilled roasted baked oven smoky yogurt marinade spicy starter appetizer dinner">
+        <div class="card-photo">
+          <img src="images/tandoori-chicken.jpg" alt="Tandoori Chicken" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Tandoori Chicken</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="chicken-mandi.html"
+         data-search="chicken mandi non-veg nonveg meat rice arabian yemeni saudi spiced basmati roasted tender platter dinner lunch main dish">
+        <div class="card-photo">
+          <img src="images/chicken-mandi.jpg" alt="Chicken Mandi" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Chicken Mandi</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="chocolate-brownies.html"
+         data-search="chocolate brownies dessert sweet baked baking cake cocoa walnut snack treat">
+        <div class="card-photo">
+          <img src="images/chocolate-brownies.jpg" alt="Chocolate Brownies" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Chocolate Brownies</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="ras-malai.html"
+         data-search="ras malai rasmalai dessert sweet milk chenna paneer cardamom saffron pistachio indian chilled">
+        <div class="card-photo">
+          <img src="images/ras-malai.jpg" alt="Ras Malai" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Ras Malai</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="gulab-jamun.html"
+         data-search="gulab jamun dessert sweet fried syrup milk powder khoya cardamom rose saffron indian festival eid diwali warm">
+        <div class="card-photo">
+          <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Gulab Jamun</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="vanilla-ice-cream.html"
+         data-search="vanilla ice cream dessert sweet frozen cold creamy no-churn cream condensed milk summer scoop treat">
+        <div class="card-photo">
+          <img src="images/vanilla-ice-cream.jpg" alt="Vanilla Ice Cream" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Vanilla Ice Cream</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="mango-smoothie.html"
+         data-search="mango smoothie drink drinks beverage cold fruit sweet yogurt milk summer refreshing quick">
+        <div class="card-photo">
+          <img src="images/mango-smoothie.jpg" alt="Mango Smoothie" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Mango Smoothie</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="falooda.html"
+         data-search="falooda drink drinks beverage cold sweet milk rose syrup ice cream vermicelli basil seeds sabja summer dessert">
+        <div class="card-photo">
+          <img src="images/falooda.jpg" alt="Falooda" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Falooda</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="chai.html"
+         data-search="chai masala tea hot drink drinks beverage milk tea ginger cardamom warm indian morning evening cozy">
+        <div class="card-photo">
+          <img src="images/chai.jpg" alt="Chai" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Chai</h3>
+        </div>
+      </a>
+
+      <a class="recipe-card" href="hot-chocolate.html"
+         data-search="hot chocolate cocoa drink drinks beverage milk warm sweet winter cozy creamy dark chocolate marshmallow">
+        <div class="card-photo">
+          <img src="images/hot-chocolate.jpg" alt="Hot Chocolate" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Hot Chocolate</h3>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

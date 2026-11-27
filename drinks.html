@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html" class="active">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Drinks Recipes</h1>
+    <p class="page-subtitle">Something cold and tasty &middot; click a picture to open the recipe</p>
+
+    <div class="card-grid category-grid">
+      <a class="recipe-card" href="mango-smoothie.html"
+         data-search="mango smoothie drink drinks beverage cold fruit sweet yogurt milk summer refreshing quick">
+        <div class="card-photo">
+          <img src="images/mango-smoothie.jpg" alt="Mango Smoothie" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Mango Smoothie</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="falooda.html"
+         data-search="falooda drink drinks beverage cold sweet milk rose syrup ice cream vermicelli basil seeds sabja summer dessert">
+        <div class="card-photo">
+          <img src="images/falooda.jpg" alt="Falooda" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Falooda</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="chai.html"
+         data-search="chai masala tea hot drink drinks beverage milk tea ginger cardamom warm indian morning evening cozy">
+        <div class="card-photo">
+          <img src="images/chai.jpg" alt="Chai" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Chai</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="hot-chocolate.html"
+         data-search="hot chocolate cocoa drink drinks beverage milk warm sweet winter cozy creamy dark chocolate marshmallow">
+        <div class="card-photo">
+          <img src="images/hot-chocolate.jpg" alt="Hot Chocolate" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Drinks</span>
+          <h3>Hot Chocolate</h3>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

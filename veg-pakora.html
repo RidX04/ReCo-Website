@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veg Pakora | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="veg">
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html" class="active">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Veg Pakora</h1>
+    <p class="page-subtitle">Veg &middot; Crispy fried vegetable fritters in a spiced gram flour batter</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/veg-pakora.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/veg-pakora.jpg</strong>)</span>
+          <img src="images/veg-pakora.jpg" alt="Veg Pakora" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 15 min</div>
+          <div>🔥 Cook: 20 min</div>
+          <div>🍽 Serves: 4</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="veg-pakora">
+            <li><label><input type="checkbox"><span>1 cup besan (gram flour)</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 cup rice flour</span></label></li>
+            <li><label><input type="checkbox"><span>1 large onion, thinly sliced</span></label></li>
+            <li><label><input type="checkbox"><span>1 medium potato, peeled and thinly sliced</span></label></li>
+            <li><label><input type="checkbox"><span>1 cup spinach leaves, roughly chopped</span></label></li>
+            <li><label><input type="checkbox"><span>1 green chilli, finely chopped</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp ajwain (carom seeds)</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp turmeric powder</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp chopped coriander leaves</span></label></li>
+            <li><label><input type="checkbox"><span>About 1/2 cup water</span></label></li>
+            <li><label><input type="checkbox"><span>Oil, for deep frying</span></label></li>
+            <li><label><input type="checkbox"><span>Salt, to taste</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Mix the besan, rice flour, chilli powder, turmeric, ajwain and salt in a large bowl.</li>
+            <li>Add the onion, potato, spinach, green chilli and coriander. Rub them into the flour with your hands for a minute so they release some moisture.</li>
+            <li>Add water a little at a time and stir to make a thick batter that coats the vegetables. Do not make it runny.</li>
+            <li>Heat the oil in a deep pan on medium heat. To test it, drop in a small bit of batter: it should rise to the top in a few seconds.</li>
+            <li>Drop in small spoonfuls of the mixture without crowding the pan. Fry for 4 to 5 minutes, turning, until golden and crisp.</li>
+            <li>Drain on paper towels and serve hot with green chutney or ketchup.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="veg.html">&larr; All Veg recipes</a>
+      <a href="veg-biryani.html">Also try: Veg Biryani &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

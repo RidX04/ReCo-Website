@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Contact &amp; Feedback</h1>
+    <p class="page-subtitle">Tell us what you think or suggest a recipe. Fields marked * are required.</p>
+
+    <form id="contactForm" class="form-box" novalidate>
+
+      <div class="field">
+        <label for="fullName">Full name *</label>
+        <input type="text" id="fullName" name="name" placeholder="e.g. Sara Ahmed">
+        <span class="error" id="nameError"></span>
+      </div>
+
+      <div class="field">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="e.g. sara@example.com">
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0501234567">
+        <span class="error" id="phoneError"></span>
+      </div>
+
+      <div class="field">
+        <label for="category">Favourite category *</label>
+        <select id="category" name="category">
+          <option value="">-- Choose one --</option>
+          <option value="Veg">Veg</option>
+          <option value="Non-Veg">Non-Veg</option>
+          <option value="Dessert">Dessert</option>
+          <option value="Drinks">Drinks</option>
+        </select>
+        <span class="error" id="categoryError"></span>
+      </div>
+
+      <div class="field">
+        <span class="label-text">How do you rate ReCo? *</span>
+        <div class="radio-row">
+          <label><input type="radio" name="rating" value="1"> 1</label>
+          <label><input type="radio" name="rating" value="2"> 2</label>
+          <label><input type="radio" name="rating" value="3"> 3</label>
+          <label><input type="radio" name="rating" value="4"> 4</label>
+          <label><input type="radio" name="rating" value="5"> 5</label>
+        </div>
+        <span class="error" id="ratingError"></span>
+      </div>
+
+      <div class="field">
+        <label for="suggestion">Recipe you would like to see (optional)</label>
+        <input type="text" id="suggestion" name="suggestion" placeholder="e.g. Chicken Karahi">
+      </div>
+
+      <div class="field">
+        <label for="comments">Comments *</label>
+        <textarea id="comments" name="comments" rows="5" maxlength="300" placeholder="Write at least 10 characters..."></textarea>
+        <span class="counter" id="charCount">0 / 300</span>
+        <span class="error" id="commentsError"></span>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn btn-light" id="clearBtn">Clear form</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulab Jamun | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html" class="active">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Gulab Jamun</h1>
+    <p class="page-subtitle">Dessert &middot; Soft fried milk dumplings soaked in rose-cardamom syrup</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/gulab-jamun.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/gulab-jamun.jpg</strong>)</span>
+          <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 25 min</div>
+          <div>🔥 Cook: 40 min</div>
+          <div>🍽 Makes: 16 pieces</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="gulab-jamun">
+            <li><label><input type="checkbox"><span>For the dumplings: 1 cup full-cream milk powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 cup all-purpose flour</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 tsp baking soda</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp ghee, melted and cooled</span></label></li>
+            <li><label><input type="checkbox"><span>About 1/4 cup milk, to knead</span></label></li>
+            <li><label><input type="checkbox"><span>Oil or ghee, for frying</span></label></li>
+            <li><label><input type="checkbox"><span>For the syrup: 1 1/2 cups sugar</span></label></li>
+            <li><label><input type="checkbox"><span>1 1/2 cups water</span></label></li>
+            <li><label><input type="checkbox"><span>3 cardamom pods, crushed</span></label></li>
+            <li><label><input type="checkbox"><span>A pinch of saffron strands</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp rose water (optional)</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp lemon juice</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Make the syrup: boil the sugar, water and cardamom for 8 to 10 minutes until slightly sticky. Add the saffron, rose water and lemon juice. Keep it warm.</li>
+            <li>Mix the milk powder, flour and baking soda in a bowl. Add the ghee and rub it in.</li>
+            <li>Add the milk a spoonful at a time and mix to a soft, smooth dough. Do not knead it hard. Rest for 10 minutes.</li>
+            <li>Make 16 small, smooth balls with no cracks. They will double in size when fried.</li>
+            <li>Heat the oil on low to medium heat. Fry the balls gently, turning often, for 8 to 10 minutes until deep golden brown. If the oil is too hot they stay raw inside.</li>
+            <li>Drain them and drop them into the warm syrup. Soak for at least 1 hour.</li>
+            <li>Serve warm or at room temperature.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="dessert.html">&larr; All Dessert recipes</a>
+      <a href="vanilla-ice-cream.html">Also try: Vanilla Ice Cream &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

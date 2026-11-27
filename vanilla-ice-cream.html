@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla Ice Cream | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html" class="active">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Vanilla Ice Cream</h1>
+    <p class="page-subtitle">Dessert &middot; Creamy no-churn ice cream with just four ingredients</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/vanilla-ice-cream.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/vanilla-ice-cream.jpg</strong>)</span>
+          <img src="images/vanilla-ice-cream.jpg" alt="Vanilla Ice Cream" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 10 min</div>
+          <div>🔥 Cook: none (freeze 6 hrs)</div>
+          <div>🍽 Serves: 6</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="vanilla-ice-cream">
+            <li><label><input type="checkbox"><span>2 cups (480 ml) cold heavy whipping cream</span></label></li>
+            <li><label><input type="checkbox"><span>1 can (395 g) sweetened condensed milk, chilled</span></label></li>
+            <li><label><input type="checkbox"><span>2 tsp vanilla extract</span></label></li>
+            <li><label><input type="checkbox"><span>A pinch of salt</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to make it!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Chill a large mixing bowl and the whisk or beaters in the freezer for 15 minutes.</li>
+            <li>Pour the cold cream into the bowl and whip until stiff peaks form.</li>
+            <li>In another bowl, stir together the condensed milk, vanilla and salt.</li>
+            <li>Gently fold the condensed milk mixture into the whipped cream until just combined. Do not overmix, or the ice cream will be dense.</li>
+            <li>Pour into a loaf pan or freezer-safe container, smooth the top and cover tightly.</li>
+            <li>Freeze for at least 6 hours or overnight until firm.</li>
+            <li>Let it stand for 5 minutes before scooping.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="dessert.html">&larr; All Dessert recipes</a>
+      <a href="mango-smoothie.html">Drinks: Mango Smoothie &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

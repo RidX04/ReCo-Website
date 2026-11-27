@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadhi Pakora | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="veg">
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html" class="active">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Kadhi Pakora</h1>
+    <p class="page-subtitle">Veg &middot; Tangy yogurt curry with crispy gram flour fritters</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/kadhi-pakora.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/kadhi-pakora.jpg</strong>)</span>
+          <img src="images/kadhi-pakora.jpg" alt="Kadhi Pakora" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 20 min</div>
+          <div>🔥 Cook: 40 min</div>
+          <div>🍽 Serves: 4</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="kadhi-pakora">
+            <li><label><input type="checkbox"><span>For the pakoras: 1 cup besan (gram flour)</span></label></li>
+            <li><label><input type="checkbox"><span>1 medium onion, finely chopped</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp ajwain (carom seeds)</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>Oil, for deep frying</span></label></li>
+            <li><label><input type="checkbox"><span>For the kadhi: 1 cup sour yogurt (curd)</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 cup besan (gram flour)</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp turmeric powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp coriander powder</span></label></li>
+            <li><label><input type="checkbox"><span>3 1/2 cups water</span></label></li>
+            <li><label><input type="checkbox"><span>For the tadka: 2 tbsp ghee or oil</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp cumin seeds</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp mustard seeds</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp fenugreek seeds (methi dana)</span></label></li>
+            <li><label><input type="checkbox"><span>2 dried red chillies</span></label></li>
+            <li><label><input type="checkbox"><span>8 to 10 curry leaves</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp grated ginger</span></label></li>
+            <li><label><input type="checkbox"><span>A pinch of asafoetida (hing)</span></label></li>
+            <li><label><input type="checkbox"><span>Salt, to taste</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Make the pakora batter: mix 1 cup besan, the onion, ajwain, chilli powder and a pinch of salt. Add a few tablespoons of water to make a thick batter and beat it well.</li>
+            <li>Heat oil in a pan. Drop in small spoonfuls of batter and fry on medium heat until golden and crisp. Drain on paper and set aside.</li>
+            <li>Whisk the yogurt, 1/4 cup besan, turmeric, chilli powder, coriander powder, salt and water in a pot until completely smooth with no lumps.</li>
+            <li>Place the pot on medium heat and stir constantly until it starts to boil. Lower the heat and simmer for 25 to 30 minutes, stirring now and then, until the kadhi thickens and the raw smell of besan goes away.</li>
+            <li>Add most of the pakoras and simmer for 5 more minutes so they soak up the kadhi.</li>
+            <li>For the tadka, heat the ghee in a small pan. Add the cumin, mustard seeds, fenugreek seeds, dried chillies, curry leaves, ginger and asafoetida. Let them sizzle for 30 seconds.</li>
+            <li>Pour the tadka over the kadhi. Top with the remaining pakoras and serve hot with steamed rice.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="veg.html">&larr; All Veg recipes</a>
+      <a href="veg-pakora.html">Also try: Veg Pakora &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

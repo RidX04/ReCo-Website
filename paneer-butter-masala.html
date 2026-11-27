@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paneer Butter Masala | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="veg">
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html" class="active">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Paneer Butter Masala</h1>
+    <p class="page-subtitle">Veg &middot; Creamy, rich North Indian curry</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/paneer-butter-masala.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/paneer-butter-masala.jpg</strong>)</span>
+          <img src="images/paneer-butter-masala.jpg" alt="Paneer Butter Masala" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 15 min</div>
+          <div>🔥 Cook: 30 min</div>
+          <div>🍽 Serves: 4</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="paneer-butter-masala">
+            <li><label><input type="checkbox"><span>250 g paneer, cubed</span></label></li>
+            <li><label><input type="checkbox"><span>3 tbsp butter</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp oil</span></label></li>
+            <li><label><input type="checkbox"><span>1 large onion, chopped</span></label></li>
+            <li><label><input type="checkbox"><span>3 medium tomatoes, chopped (or 1 cup tomato puree)</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp ginger-garlic paste</span></label></li>
+            <li><label><input type="checkbox"><span>10 cashews, soaked</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp coriander powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp garam masala</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp kasuri methi (dried fenugreek leaves)</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp sugar</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 cup fresh cream</span></label></li>
+            <li><label><input type="checkbox"><span>Salt, to taste</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Heat 1 tbsp butter and the oil in a pan. Add the onion and cook until soft and golden.</li>
+            <li>Add the tomatoes and soaked cashews. Cook for 8 to 10 minutes until the tomatoes are mushy.</li>
+            <li>Let the mixture cool slightly, then blend it into a smooth puree.</li>
+            <li>In the same pan, melt the remaining butter. Add the ginger-garlic paste and cook for 1 minute.</li>
+            <li>Pour in the puree. Add the chilli powder, coriander powder and salt. Simmer for 5 to 7 minutes.</li>
+            <li>Stir in the paneer cubes, sugar and a splash of water if the gravy is too thick. Simmer for 5 minutes.</li>
+            <li>Crush the kasuri methi between your palms and add it with the garam masala and cream.</li>
+            <li>Cook for 1 more minute, then serve hot with naan, roti or rice.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="veg.html">&larr; All Veg recipes</a>
+      <a href="kadhi-pakora.html">Also try: Kadhi Pakora &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falooda | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html" class="active">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Falooda</h1>
+    <p class="page-subtitle">Drinks &middot; Rose milk layered with vermicelli, basil seeds and ice cream</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/falooda.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/falooda.jpg</strong>)</span>
+          <img src="images/falooda.jpg" alt="Falooda" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 15 min</div>
+          <div>🔥 Cook: 5 min</div>
+          <div>🍽 Serves: 2</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="falooda">
+            <li><label><input type="checkbox"><span>2 cups cold milk</span></label></li>
+            <li><label><input type="checkbox"><span>3 tbsp rose syrup</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp falooda sev (vermicelli)</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp sabja (sweet basil) seeds</span></label></li>
+            <li><label><input type="checkbox"><span>2 scoops vanilla ice cream</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp chopped pistachios and almonds</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp tutti frutti (optional)</span></label></li>
+            <li><label><input type="checkbox"><span>Ice cubes (optional)</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to blend!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Soak the sabja seeds in 1/2 cup water for 15 minutes until they swell and turn jelly-like.</li>
+            <li>Boil the falooda sev in water for 3 to 5 minutes until soft. Drain and rinse under cold water.</li>
+            <li>Mix the cold milk with 1 tbsp of the rose syrup.</li>
+            <li>Layer each tall glass: 1 tbsp rose syrup, the sabja seeds, then the falooda sev.</li>
+            <li>Pour in the rose milk and add ice cubes if you like.</li>
+            <li>Top with a scoop of vanilla ice cream, the chopped nuts and tutti frutti. Serve immediately with a long spoon.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="drinks.html">&larr; All Drinks recipes</a>
+      <a href="chai.html">Also try: Chai &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

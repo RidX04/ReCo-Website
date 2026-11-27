@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Veg | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html" class="active">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Non-Veg Recipes</h1>
+    <p class="page-subtitle">Non-vegetarian recipes &middot; click a picture to open the recipe</p>
+
+    <div class="card-grid category-grid">
+      <a class="recipe-card" href="chicken-biryani.html"
+         data-search="chicken biryani non-veg nonveg meat rice spicy basmati saffron raita main dish dinner lunch">
+        <div class="card-photo">
+          <img src="images/chicken-biryani.jpg" alt="Chicken Biryani" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Chicken Biryani</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="dum-ka-chicken.html"
+         data-search="dum ka chicken non-veg nonveg meat curry slow cooked yogurt spicy mughlai hyderabadi dinner lunch">
+        <div class="card-photo">
+          <img src="images/dum-ka-chicken.jpg" alt="Dum Ka Chicken" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Dum Ka Chicken</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="tandoori-chicken.html"
+         data-search="tandoori chicken non-veg nonveg meat grilled roasted baked oven smoky yogurt marinade spicy starter appetizer dinner">
+        <div class="card-photo">
+          <img src="images/tandoori-chicken.jpg" alt="Tandoori Chicken" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Tandoori Chicken</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="chicken-mandi.html"
+         data-search="chicken mandi non-veg nonveg meat rice arabian yemeni saudi spiced basmati roasted tender platter dinner lunch main dish">
+        <div class="card-photo">
+          <img src="images/chicken-mandi.jpg" alt="Chicken Mandi" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Non-Veg</span>
+          <h3>Chicken Mandi</h3>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

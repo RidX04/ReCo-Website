@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Brownies | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html" class="active">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Chocolate Brownies</h1>
+    <p class="page-subtitle">Dessert &middot; Fudgy, chewy and chocolatey</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/chocolate-brownies.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/chocolate-brownies.jpg</strong>)</span>
+          <img src="images/chocolate-brownies.jpg" alt="Chocolate Brownies" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 15 min</div>
+          <div>🔥 Bake: 25 min</div>
+          <div>🍽 Makes: 12 squares</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="chocolate-brownies">
+            <li><label><input type="checkbox"><span>1/2 cup (115 g) butter</span></label></li>
+            <li><label><input type="checkbox"><span>150 g dark chocolate, chopped</span></label></li>
+            <li><label><input type="checkbox"><span>1 cup sugar</span></label></li>
+            <li><label><input type="checkbox"><span>2 large eggs</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp vanilla extract</span></label></li>
+            <li><label><input type="checkbox"><span>3/4 cup all-purpose flour</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 cup cocoa powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 tsp baking powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 tsp salt</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup chopped walnuts or chocolate chips (optional)</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to bake!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Preheat the oven to 175&deg;C (350&deg;F). Line an 8-inch square pan with parchment paper.</li>
+            <li>Melt the butter and dark chocolate together in a bowl over simmering water, or in the microwave in short bursts. Stir until smooth and let cool a few minutes.</li>
+            <li>Whisk in the sugar, then the eggs one at a time, then the vanilla.</li>
+            <li>Sift in the flour, cocoa powder, baking powder and salt. Fold gently until just combined.</li>
+            <li>Fold in the nuts or chocolate chips if using. Pour the batter into the pan and smooth the top.</li>
+            <li>Bake for 22 to 25 minutes. A toothpick should come out with a few moist crumbs, not wet batter.</li>
+            <li>Cool completely in the pan before cutting into squares.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="dessert.html">&larr; All Dessert recipes</a>
+      <a href="ras-malai.html">Also try: Ras Malai &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

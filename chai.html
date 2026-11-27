@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html" class="active">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Chai</h1>
+    <p class="page-subtitle">Drinks &middot; Hot spiced milk tea with ginger and cardamom</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/chai.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/chai.jpg</strong>)</span>
+          <img src="images/chai.jpg" alt="Chai" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 3 min</div>
+          <div>🔥 Cook: 8 min</div>
+          <div>🍽 Serves: 2</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="chai">
+            <li><label><input type="checkbox"><span>1 cup water</span></label></li>
+            <li><label><input type="checkbox"><span>1 cup whole milk</span></label></li>
+            <li><label><input type="checkbox"><span>2 tsp loose black tea leaves (or 2 tea bags)</span></label></li>
+            <li><label><input type="checkbox"><span>2 tsp sugar, or to taste</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 inch fresh ginger, crushed</span></label></li>
+            <li><label><input type="checkbox"><span>2 cardamom pods, crushed</span></label></li>
+            <li><label><input type="checkbox"><span>1 small cinnamon piece (optional)</span></label></li>
+            <li><label><input type="checkbox"><span>2 black peppercorns (optional)</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg"> You have everything. Time to brew!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Boil the water with the ginger, cardamom and any other spices in a small saucepan for 2 minutes.</li>
+            <li>Add the tea leaves and simmer for 1 to 2 minutes until the water turns dark.</li>
+            <li>Pour in the milk, add the sugar and bring it to a boil.</li>
+            <li>Lower the heat and simmer for 2 to 3 minutes. Watch it so it does not boil over.</li>
+            <li>Strain into two cups and serve hot.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="drinks.html">&larr; All Drinks recipes</a>
+      <a href="hot-chocolate.html">Also try: Hot Chocolate &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

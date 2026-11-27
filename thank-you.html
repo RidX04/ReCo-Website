@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank you | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title" id="thanksTitle">Thank you!</h1>
+    <p class="page-subtitle" id="thanksSub">Here is the information you sent us.</p>
+
+    <div class="box result-box" id="resultBox">
+      <div class="table-wrap">
+        <table class="recipe-table result-table">
+          <caption>Your submitted details</caption>
+          <tbody id="resultBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="box" id="noData" style="display:none;">
+      <p>No form information was found. Please fill in the contact form first.</p>
+    </div>
+
+    <div class="page-nav">
+      <a href="contact.html">&larr; Send another message</a>
+      <a href="index.html">Back to Home &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandoori Chicken | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html" class="active">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Tandoori Chicken</h1>
+    <p class="page-subtitle">Non-Veg &middot; Yogurt-marinated chicken roasted until charred and juicy</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/tandoori-chicken.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/tandoori-chicken.jpg</strong>)</span>
+          <img src="images/tandoori-chicken.jpg" alt="Tandoori Chicken" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 20 min + marinate 4 hrs</div>
+          <div>🔥 Cook: 30 min</div>
+          <div>🍽 Serves: 4</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="tandoori-chicken">
+            <li><label><input type="checkbox"><span>8 chicken pieces (legs and thighs), skin removed</span></label></li>
+            <li><label><input type="checkbox"><span>First marinade: 2 tbsp lemon juice</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp Kashmiri red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp salt</span></label></li>
+            <li><label><input type="checkbox"><span>Second marinade: 1 cup thick yogurt</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp ginger-garlic paste</span></label></li>
+            <li><label><input type="checkbox"><span>2 tsp Kashmiri red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp garam masala</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp cumin powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp coriander powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp turmeric powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp kasuri methi (dried fenugreek leaves)</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp mustard oil or any oil</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp melted butter, for basting</span></label></li>
+            <li><label><input type="checkbox"><span>Onion rings and lemon wedges, to serve</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Make deep cuts in the chicken pieces. Rub them with the lemon juice, 1 tsp chilli powder and salt. Rest for 20 minutes.</li>
+            <li>Mix the yogurt, ginger-garlic paste, remaining chilli powder, garam masala, cumin, coriander, turmeric, crushed kasuri methi and oil in a bowl.</li>
+            <li>Coat the chicken well with this marinade. Cover and refrigerate for at least 4 hours, or overnight for the best flavour.</li>
+            <li>Preheat the oven to 220&deg;C (430&deg;F). Place the chicken on a rack set over a tray lined with foil.</li>
+            <li>Roast for 25 to 30 minutes, turning once and brushing with butter halfway. The chicken is done when the juices run clear and the thickest part reaches 75&deg;C (165&deg;F).</li>
+            <li>For extra char, grill on high for 3 to 5 minutes at the end.</li>
+            <li>Serve hot with onion rings, lemon wedges and mint chutney.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="nonveg.html">&larr; All Non-Veg recipes</a>
+      <a href="chicken-mandi.html">Also try: Chicken Mandi &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

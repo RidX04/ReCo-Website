@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mango Smoothie | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html" class="active">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Mango Smoothie</h1>
+    <p class="page-subtitle">Drinks &middot; Thick, cold and fruity</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/mango-smoothie.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/mango-smoothie.jpg</strong>)</span>
+          <img src="images/mango-smoothie.jpg" alt="Mango Smoothie" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 5 min</div>
+          <div>🔥 Cook: none</div>
+          <div>🍽 Serves: 2</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="mango-smoothie">
+            <li><label><input type="checkbox"><span>2 ripe mangoes, peeled and cubed (about 2 cups)</span></label></li>
+            <li><label><input type="checkbox"><span>1 cup cold milk</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup plain yogurt</span></label></li>
+            <li><label><input type="checkbox"><span>1 to 2 tbsp honey or sugar, to taste</span></label></li>
+            <li><label><input type="checkbox"><span>4 to 5 ice cubes</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 tsp cardamom powder (optional)</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to blend!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Add the mango cubes, milk, yogurt and honey to a blender.</li>
+            <li>Add the ice cubes and cardamom powder if using.</li>
+            <li>Blend on high for 45 to 60 seconds until completely smooth.</li>
+            <li>Taste and add more honey if needed, then blend briefly again.</li>
+            <li>Pour into glasses and serve immediately. Garnish with a few mango pieces if you like.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="drinks.html">&larr; All Drinks recipes</a>
+      <a href="falooda.html">Also try: Falooda &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

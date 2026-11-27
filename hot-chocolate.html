@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Chocolate | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html" class="active">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Hot Chocolate</h1>
+    <p class="page-subtitle">Drinks &middot; Rich, creamy cocoa made with real chocolate</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/hot-chocolate.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/hot-chocolate.jpg</strong>)</span>
+          <img src="images/hot-chocolate.jpg" alt="Hot Chocolate" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 5 min</div>
+          <div>🔥 Cook: 8 min</div>
+          <div>🍽 Serves: 2</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="hot-chocolate">
+            <li><label><input type="checkbox"><span>2 cups whole milk</span></label></li>
+            <li><label><input type="checkbox"><span>3 tbsp unsweetened cocoa powder</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp sugar, or to taste</span></label></li>
+            <li><label><input type="checkbox"><span>50 g dark chocolate, chopped</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp vanilla extract</span></label></li>
+            <li><label><input type="checkbox"><span>A pinch of salt</span></label></li>
+            <li><label><input type="checkbox"><span>Whipped cream or marshmallows, to top (optional)</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to make it!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>In a saucepan, whisk the cocoa, sugar and salt with 1/4 cup of the milk until it forms a smooth paste.</li>
+            <li>Add the rest of the milk and heat on medium-low, stirring often, until it is hot. Do not let it boil.</li>
+            <li>Add the chopped chocolate and whisk until completely melted and smooth.</li>
+            <li>Stir in the vanilla.</li>
+            <li>Pour into two mugs and top with whipped cream or marshmallows.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="drinks.html">&larr; All Drinks recipes</a>
+      <a href="paneer-butter-masala.html">Veg: Paneer Butter Masala &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

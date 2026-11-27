@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veg Biryani | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="veg">
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html" class="active">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Veg Biryani</h1>
+    <p class="page-subtitle">Veg &middot; Fragrant layered rice with spiced vegetables</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/veg-biryani.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/veg-biryani.jpg</strong>)</span>
+          <img src="images/veg-biryani.jpg" alt="Veg Biryani" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 25 min</div>
+          <div>🔥 Cook: 45 min</div>
+          <div>🍽 Serves: 4</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="veg-biryani">
+            <li><label><input type="checkbox"><span>2 cups basmati rice, washed and soaked 30 min</span></label></li>
+            <li><label><input type="checkbox"><span>2 cups mixed vegetables (carrot, peas, beans, cauliflower), chopped</span></label></li>
+            <li><label><input type="checkbox"><span>2 large onions, thinly sliced</span></label></li>
+            <li><label><input type="checkbox"><span>2 tomatoes, chopped</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup plain yogurt</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp ginger-garlic paste</span></label></li>
+            <li><label><input type="checkbox"><span>2 green chillies, slit</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp turmeric powder</span></label></li>
+            <li><label><input type="checkbox"><span>2 tsp biryani masala (or garam masala)</span></label></li>
+            <li><label><input type="checkbox"><span>Whole spices: 4 cloves, 4 cardamom pods, 1 cinnamon stick, 2 bay leaves</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup chopped mint and coriander leaves</span></label></li>
+            <li><label><input type="checkbox"><span>A pinch of saffron soaked in 1/4 cup warm milk</span></label></li>
+            <li><label><input type="checkbox"><span>3 tbsp ghee</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp oil</span></label></li>
+            <li><label><input type="checkbox"><span>Salt, to taste</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Heat the oil and 1 tbsp ghee in a heavy pot. Fry the onions until deep golden brown. Take out half and set aside for layering.</li>
+            <li>Add the ginger-garlic paste and green chillies. Cook for 1 minute, then add the tomatoes and cook until soft.</li>
+            <li>Add the vegetables, chilli powder, turmeric, biryani masala and salt. Stir in the yogurt and half the mint and coriander. Cook for 8 to 10 minutes until the vegetables are about 80% cooked.</li>
+            <li>Boil the soaked rice in salted water with the whole spices until 70% cooked. Drain.</li>
+            <li>Spread the rice over the vegetable masala. Top with the fried onions, remaining mint and coriander, saffron milk and the rest of the ghee.</li>
+            <li>Cover tightly and cook on the lowest heat (dum) for 20 minutes.</li>
+            <li>Rest for 5 minutes, then gently mix and serve with raita.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="veg.html">&larr; All Veg recipes</a>
+      <a href="chicken-biryani.html">Non-veg: Chicken Biryani &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

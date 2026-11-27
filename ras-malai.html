@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ras Malai | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html" class="active">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Ras Malai</h1>
+    <p class="page-subtitle">Dessert &middot; Soft milk dumplings in creamy saffron milk</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/ras-malai.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/ras-malai.jpg</strong>)</span>
+          <img src="images/ras-malai.jpg" alt="Ras Malai" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 30 min</div>
+          <div>🔥 Cook: 50 min + chill 4 hrs</div>
+          <div>🍽 Makes: 12 pieces</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="ras-malai">
+            <li><label><input type="checkbox"><span>For the dumplings: 1 litre full-fat milk</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp lemon juice</span></label></li>
+            <li><label><input type="checkbox"><span>1 tbsp all-purpose flour</span></label></li>
+            <li><label><input type="checkbox"><span>For the sugar syrup: 4 cups water</span></label></li>
+            <li><label><input type="checkbox"><span>3/4 cup sugar</span></label></li>
+            <li><label><input type="checkbox"><span>For the creamy milk: 1 litre full-fat milk</span></label></li>
+            <li><label><input type="checkbox"><span>6 tbsp sugar (or to taste)</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 tsp cardamom powder</span></label></li>
+            <li><label><input type="checkbox"><span>A pinch of saffron strands</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp chopped pistachios</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp chopped almonds</span></label></li>
+            <li><label><input type="checkbox"><span>Ice-cold water, for rinsing</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Boil 1 litre of milk. Turn off the heat, add the lemon juice and stir gently until the milk curdles and the whey turns clear.</li>
+            <li>Pour into a cloth-lined sieve and rinse under cold water to remove the lemony taste. Squeeze out all the water and hang for 20 minutes.</li>
+            <li>Knead the chenna (milk solids) with the flour on a plate for 6 to 8 minutes until smooth and soft. Make 12 small balls and flatten them slightly.</li>
+            <li>Boil the water and 3/4 cup sugar in a wide pot. Add the discs gently, cover and cook on medium heat for 15 minutes until they double in size.</li>
+            <li>Meanwhile, boil the second litre of milk in another pan and simmer for 20 minutes until it reduces by about a quarter. Stir in the sugar, cardamom and saffron.</li>
+            <li>Lift the cooked discs out of the syrup, gently press out the extra syrup, and add them to the thickened milk.</li>
+            <li>Cool, then chill in the fridge for at least 4 hours. Top with the pistachios and almonds and serve cold.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="dessert.html">&larr; All Dessert recipes</a>
+      <a href="gulab-jamun.html">Also try: Gulab Jamun &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

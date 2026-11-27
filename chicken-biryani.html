@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyderabadi Chicken Biryani | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html" class="active">Non-Veg</a>
+    <a href="dessert.html">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Hyderabadi Chicken Biryani</h1>
+    <p class="page-subtitle">Non-Veg &middot; Layered dum biryani with marinated chicken, saffron and fried onions</p>
+
+    <div class="recipe-layout">
+
+      <!-- PHOTO SPACE: put your image at images/chicken-biryani.jpg -->
+      <div class="recipe-photo">
+        <div class="photo-slot">
+          <span>Your photo goes here<br>(save it as <strong>images/chicken-biryani.jpg</strong>)</span>
+          <img src="images/chicken-biryani.jpg" alt="Hyderabadi Chicken Biryani" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="recipe-details">
+        <div class="meta">
+          <div>⏱ Prep: 40 min + marinate 2 hrs</div>
+          <div>🔥 Cook: 1 hr</div>
+          <div>🍽 Serves: 5 to 6</div>
+        </div>
+
+        <div class="box">
+          <h2>Ingredients checklist</h2>
+          <div class="progress-wrap">
+            <div class="progress-text" id="progressText">0 of 0 ingredients ready</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+          <ul class="checklist" data-recipe="chicken-biryani">
+            <li><label><input type="checkbox"><span>1 kg chicken, bone-in, cut into medium pieces</span></label></li>
+            <li><label><input type="checkbox"><span>3 cups aged basmati rice, washed and soaked 30 min</span></label></li>
+            <li><label><input type="checkbox"><span>For the birista: 4 large onions, thinly sliced</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup oil, for frying the onions</span></label></li>
+            <li><label><input type="checkbox"><span>For the marinade: 1 cup thick yogurt</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp ginger-garlic paste</span></label></li>
+            <li><label><input type="checkbox"><span>2 tsp Kashmiri red chilli powder</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp turmeric powder</span></label></li>
+            <li><label><input type="checkbox"><span>2 tsp garam masala</span></label></li>
+            <li><label><input type="checkbox"><span>4 green chillies, slit</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup chopped mint leaves</span></label></li>
+            <li><label><input type="checkbox"><span>1/2 cup chopped coriander leaves</span></label></li>
+            <li><label><input type="checkbox"><span>2 tbsp lemon juice</span></label></li>
+            <li><label><input type="checkbox"><span>For boiling the rice: 3 1/2 litres water</span></label></li>
+            <li><label><input type="checkbox"><span>Whole spices: 4 cloves, 4 green cardamom pods, 1 black cardamom, 1 cinnamon stick, 2 bay leaves</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp shahi jeera (caraway seeds) or cumin seeds</span></label></li>
+            <li><label><input type="checkbox"><span>1/4 cup warm milk with a generous pinch of saffron</span></label></li>
+            <li><label><input type="checkbox"><span>3 tbsp ghee</span></label></li>
+            <li><label><input type="checkbox"><span>1 tsp kewra or rose water (optional)</span></label></li>
+            <li><label><input type="checkbox"><span>A little dough (flour and water), to seal the pot</span></label></li>
+            <li><label><input type="checkbox"><span>Salt, to taste</span></label></li>
+          </ul>
+          <button class="btn" id="resetBtn" type="button">Reset checklist</button>
+          <div class="done-msg" id="doneMsg">You have everything. Time to cook!</div>
+        </div>
+
+        <div class="box">
+          <h2>Instructions</h2>
+          <ol class="steps">
+            <li>Make the birista: heat the oil in a pan and fry the sliced onions on medium heat for 15 to 20 minutes, stirring often, until deep golden and crisp. Drain and spread them out so they crisp up. Keep the oil.</li>
+            <li>Marinate the chicken with the yogurt, ginger-garlic paste, chilli powder, turmeric, garam masala, green chillies, half the mint and coriander, lemon juice, half of the birista (crushed by hand), 3 tbsp of the reserved onion oil and salt. Cover and refrigerate for at least 2 hours, or overnight.</li>
+            <li>Bring the water to a boil with the whole spices, shahi jeera and a good amount of salt (it should taste salty like the sea).</li>
+            <li>Add the soaked rice and boil for 5 to 6 minutes until it is about 70% cooked: a grain should break easily when pressed but still be firm in the centre. Drain at once.</li>
+            <li>Spread the marinated chicken evenly in the bottom of a heavy-bottomed pot. Cover with half of the rice.</li>
+            <li>Sprinkle on half of the remaining birista, mint and coriander. Add the rest of the rice, then top with the remaining birista, mint and coriander, the saffron milk, the ghee and the kewra water.</li>
+            <li>Seal the pot with the dough and a tight lid. Cook on high heat for 3 to 4 minutes until steam starts to escape, then reduce to the lowest heat (dum) and cook for 35 to 40 minutes. A flat pan under the pot stops the bottom from burning.</li>
+            <li>Switch off the heat and rest for 10 minutes before opening. Check that the chicken is fully cooked (the juices run clear and the thickest piece reaches 75&deg;C / 165&deg;F).</li>
+            <li>Mix gently from the bottom so the layers combine, and serve hot with raita and mirchi ka salan.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="nonveg.html">&larr; All Non-Veg recipes</a>
+      <a href="dum-ka-chicken.html">Also try: Dum Ka Chicken &rarr;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert | ReCo</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="ReCo logo"></a>
+    <a href="index.html">Home</a>
+    <a href="veg.html">Veg</a>
+    <a href="nonveg.html">Non-Veg</a>
+    <a href="dessert.html" class="active">Dessert</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+
+  <main class="container">
+    <h1 class="page-title">Dessert Recipes</h1>
+    <p class="page-subtitle">Sweet treats &middot; click a picture to open the recipe</p>
+
+    <div class="card-grid category-grid">
+      <a class="recipe-card" href="chocolate-brownies.html"
+         data-search="chocolate brownies dessert sweet baked baking cake cocoa walnut snack treat">
+        <div class="card-photo">
+          <img src="images/chocolate-brownies.jpg" alt="Chocolate Brownies" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Chocolate Brownies</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="ras-malai.html"
+         data-search="ras malai rasmalai dessert sweet milk chenna paneer cardamom saffron pistachio indian chilled">
+        <div class="card-photo">
+          <img src="images/ras-malai.jpg" alt="Ras Malai" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Ras Malai</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="gulab-jamun.html"
+         data-search="gulab jamun dessert sweet fried syrup milk powder khoya cardamom rose saffron indian festival eid diwali warm">
+        <div class="card-photo">
+          <img src="images/gulab-jamun.jpg" alt="Gulab Jamun" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Gulab Jamun</h3>
+        </div>
+      </a>
+      <a class="recipe-card" href="vanilla-ice-cream.html"
+         data-search="vanilla ice cream dessert sweet frozen cold creamy no-churn cream condensed milk summer scoop treat">
+        <div class="card-photo">
+          <img src="images/vanilla-ice-cream.jpg" alt="Vanilla Ice Cream" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="tag">Dessert</span>
+          <h3>Vanilla Ice Cream</h3>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ReCo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
